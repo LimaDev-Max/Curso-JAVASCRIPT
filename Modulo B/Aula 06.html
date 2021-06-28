@@ -8,33 +8,27 @@
     <title>Meu primeiro Progama...</title>
     <style>
         body {
-            background-color: lightskyblue;
-            color: white;
             font: normal 20pt Arial;
         }
-        h1 {
-            color: rgb(209, 209, 31);
-        }
     </style>
-</head>
+</head> 
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Já me livrei da maldição!!!</p>
-    <script>
-        /*
-        var nome = window.prompt('Qual é seu nome?')// Vai perguntar o nome...
-        window.alert('É um grande prazer em te conhecer, ' + nome + "!")// concatenação!
-        */
-    </script>
-    <p>Exercicio Abaixo</p>
-    <script>
-        var n1 = Number(window.prompt('digite um número: '))
-        var n2 = Number(window.prompt('digite outro número '))
-        var s = n1 + n2
-        window.alert('A soma ente ${n1} e ${n2} é igual a ${s}')// Concatenação
-        // + Serve Para Adição
-        // + Serve Para Concatenação
-    </script>
-  
+<h3>oii</h3>
+   
+<script>
+    let n1 = Number(prompt('Digite um número: '))
+    let n2 = Number(prompt('Digite outro número: '))
+    let s = n1 + n2
+    alert(s)
+    document.write(`${s.toFixed(2)} <br>`)
+    document.write(`REAL é ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}<br>`)
+    document.write(`DOLAR é ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}<br>`)
+    document.write(`EURO é ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}<br>`)
+    let nome = prompt('Qual é seu nome?')
+    document.write(`Olá ${nome}, seu nome tem ${nome.length} letras.`)
+    document.write(`<br> Seu nome em Maiuscula é ${nome.toUpperCase()}`)
+    document.write(`<br> Seu nome em Menuscula é ${nome.toLowerCase()}`)
+</script>   
+
 </body>
 </html>
